@@ -1,16 +1,25 @@
-# my_collection
 
-A new Flutter project.
+# My Collection
 
-## Getting Started
+Um app desenvolvido em Flutter, com a finalidade de auxiliar no gerenciamento da minha coleção de minifigures.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Funcionalidades
+O app funciona de forma simples e possui um visual minimalista, com detalhes que remetem o tema "LEGO"
+
+- Tela ""Minha Coleção" - apresenta todas as minifigures já cadastradas. Campos para pesquisar minifigures por "nome" e por "coleção".
+
+- Tela "Registrar Minifigure" - cadastro das minifigures, campo para inserção de nome da minifigure e coleção ha qual pertence a minifigure. Botões para fotografar a minifigure e salvar minifigure.
+
+
+
+## Autor
+
+- [@RodrigoSouzza](https://github.com/RodrigoSouzza)
+
+
+
+
+
