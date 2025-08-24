@@ -22,4 +22,16 @@ class MinifigureProvider with ChangeNotifier {
     _box.add(minifigure);
     notifyListeners();
   }
+
+  void updateMinifigure(int index, Minifigure updated) {
+    _items[index] = updated;
+    _box.putAt(index, updated);
+    notifyListeners();
+  }
+
+  void deleteMinifigure(int index) {
+    _items.removeAt(index);
+    _box.deleteAt(index);
+    notifyListeners();
+  }
 }
