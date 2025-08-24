@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+
 import 'screens/collection_screen.dart';
 import 'screens/register_screen.dart';
 import 'providers/minifigure_provider.dart';
+import 'models/minifigure.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Hive.initFlutter();
+
+  Hive.registerAdapter(MinifigureAdapter());
+
+  await Hive.openBox<Minifigure>('minifigures');
+
   runApp(
     ChangeNotifierProvider(
     create: (_) => MinifigureProvider(),
